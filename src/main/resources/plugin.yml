@@ -1,0 +1,11 @@
+name: YachtPlugin
+version: '${version}'
+main: me.aneleu.yachtplugin.YachtPlugin
+api-version: '1.20'
+commands:
+  r:
+    description: fast reload command
+  yacht:
+    description: yacht dice
+    aliases:
+      - y

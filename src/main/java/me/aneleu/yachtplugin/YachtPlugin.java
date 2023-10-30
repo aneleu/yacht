@@ -20,8 +20,9 @@ public final class YachtPlugin extends JavaPlugin {
 
         getCommand("r").setExecutor(new ReloadCommand());
 
-        getCommand("yacht").setExecutor(new YachtCommand());
-        getCommand("yacht").setTabCompleter(new YachtCommand());
+        YachtCommand command = new YachtCommand();
+        getCommand("yacht").setExecutor(command);
+        getCommand("yacht").setTabCompleter(command);
 
     }
 
